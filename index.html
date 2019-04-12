@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/images/icons/icon-clear.png" type="image/png">
+    <title>Bay Area Weather Map</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="site">
+        <div class="container">
+            <div class="textarea">
+                <h1>Bay Area Weather Map</h1>
+                <h2>A site to help you manage the micro-climates of the San Francisco Bay Area</h2>
+                <img id="star" src="./assets/images/icons/icon-star-gold.png" alt="star icon">
+                <h3>Starred Places</h3>
+                <div class="starred">
+                    
+                </div>
+                <button onclick="location.href='view.html'" class="view">Starred View</button>
+            </div>
+            <!-- Santa Rosa -->
+            <div id="sr" class="bay" value="Santa Rosa" data="5393287">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexsr"></div>
+                </div>
+            </div>
+            <!-- Rohnert Park -->
+            <div id="rp" class="bay" value="Rohnert Park" data="5388564">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexrp"></div>
+                </div>
+            </div>
+            <!-- Petaluma -->
+            <div id="pt" class="bay" value="Petaluma" data="5382232">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexpt"></div>
+                </div>
+            </div>
+            <!-- San Rafael -->
+            <div id="raf" class="bay" value="San Rafael" data="5392567">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexraf"></div>
+                </div>
+            </div>
+            <!-- Novato -->
+            <div id="nov" class="bay" value="Novato" data="5378044">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexnov"></div>
+                </div>
+            </div>
+            <!-- Vallejo -->
+            <div id="val" class="bay" value="Vallejo" data="5405380">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexval"></div>
+                </div>
+            </div>
+            <!-- Vacaville -->
+            <div id="vac" class="bay" value="Vacaville" data="5405228">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexvac"></div>
+                </div>
+            </div>
+            <!-- Fairfield -->
+            <div id="ff" class="bay" value="Fairfield" data="5347335">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexff"></div>
+                </div>
+            </div>
+            <!-- Sacramento -->
+            <div id="sac" class="bay" value="Sacramento" data="5389489">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexsac"></div>
+                </div>
+            </div>
+            <!-- Benicia -->
+            <div id="ben" class="bay" value="Benicia" data="5327550">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexben"></div>
+                </div>
+            </div>
+            <!-- Oakley -->
+            <div id="oakl" class="bay" value="Oakley" data="5378566">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexoakl"></div>
+                </div>
+            </div>
+            <!-- Concord -->
+            <div id="con" class="bay" value="Concord" data="5339111">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexcon"></div>
+                </div>
+            </div>
+            <!-- Lodi -->
+            <div id="lo" class="bay" value="Lodi" data="5367565">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexlo"></div>
+                </div>
+            </div>
+            <!-- Elk Grove -->
+            <div id="eg" class="bay" value="Elk Grove" data="5346111">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexeg"></div>
+                </div>
+            </div>
+            <!-- Davis -->
+            <div id="dav" class="bay" value="Davis" data="5341704">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexdav"></div>
+                </div>
+            </div>
+            <!-- Napa -->
+            <div id="nap" class="bay" value="Napa" data="5376095">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexnap"></div>
+                </div>
+            </div>
+            <!-- San Francisco -->
+            <div id="sf" class="bay" value="San Francisco" data="5391959">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexsf"></div>
+                </div>
+            </div>
+            <!-- Daly City -->
+            <div id="dc" class="bay" value="Daly City" data="5341430">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexdc"></div>
+                </div>
+            </div>
+            <!-- Palo Alto -->
+            <div id="pa" class="bay" value="Palo Alto" data="5380748">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexpa"></div>
+                </div>
+            </div>
+            <!-- Sunnyvale -->
+            <div id="sv" class="bay" value="Sunnyvale" data="5400075">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexsv"></div>
+                </div>
+            </div>
+            <!-- San Jose -->
+            <div id="sj" class="bay" value="San Jose" data="5392171">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexsj"></div>
+                </div>
+            </div>
+            <!-- Oakland -->
+            <div id="oak" class="bay" value="Oakland" data="5378538">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexoak"></div>
+                </div>
+            </div>
+            <!-- Los Gatos -->
+            <div id="lg" class="bay" value="Los Gatos" data="5368518">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexlg"></div>
+                </div>
+            </div>
+            <!-- Morgan Hill -->
+            <div id="mh" class="bay" value="Morgan Hill" data="5374764">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexmh"></div>
+                </div>
+            </div>
+            <!-- Santa Cruz -->
+            <div id="sc" class="bay" value="Santa Cruz" data="5393052">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexsc"></div>
+                </div>
+            </div>
+            <!-- Gilroy -->
+            <div id="gr" class="bay" value="Gilroy" data="5352214">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexgr"></div>
+                </div>
+            </div>
+            <!-- Watsonville -->
+            <div id="wv" class="bay" value="Watsonville" data="5407529">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexwv"></div>
+                </div>
+            </div>
+            <!-- Hollister -->
+            <div id="hl" class="bay" value="Hollister" data="5357499">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexhl"></div>
+                </div>
+            </div>
+            <!-- Salinas -->
+            <div id="sl" class="bay" value="Salinas" data="5391295">
+                <div class="leftboxR">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxR">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxR">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexsl"></div>
+                </div>
+            </div>
+            <!-- Monterey -->
+            <div id="mr" class="bay" value="Monterey" data="5374361">
+                <div class="leftboxL">
+                    <img class="staricon" fav='n' src="./assets/images/icons/icon-star.png" alt="star icon">
+                </div>
+                <div class="clickable">
+                    <div class="midboxL">
+                        <p id="temp"></p>
+                    </div>
+                    <div class="rightboxL">
+                        <img class="weathericon">
+                    </div>
+                    <div class="flexmr"></div>
+                </div>
+            </div>
+            <div class="popup hidden">
+                <img id="popup" src="./assets/images/popup.png" alt="Weather Popup">
+                <img id="popstar" src="./assets/images/icons/icon-star-white.png" alt="Star">
+                <div id="close"><button>x</button></div>
+                <div id="datapop"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script type="text/javascript" src="./assets/javascript/code.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+html, body {
+    background-color: grey;
+}
+
+@font-face {
+    font-family: maintext;
+    src: url(avenir.otf);
+}
+
+.site {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.container {
+    width: 1180px;
+    height: 680px;
+    display: inline-block; 
+    background-color: #aee1f5;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 50px black;
+    position: relative;
+}
+
+.textarea {
+    text-align: left;
+    font-family: maintext;
+    padding: 30px 0px 0px 30px;
+}
+
+.textarea h1 {
+    font-size: 50px;
+    color: darkslategray;
+}
+
+.textarea h2 {
+    font-size: 17px;
+    color: darkslategray;
+}
+
+/* Map View Button */
+.view {
+    height: 50px;
+    width: 120px;
+    background-color: darkslategray;
+    border: 1px solid darkslategray;
+    color: ivory;
+    font-size: 12px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 28px;
+    left: 30px;
+}
+
+.view:hover {
+    box-shadow: 0px 0px 20px black;
+}
+
+.popup {
+    position: relative;
+    width: 353px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0);
+    margin-top: 20px;
+    float: left;
+    margin-right: 30px;
+    height: 216px;
+    background-image: url("../images/popup.png");
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+}
+
+.popup.hidden {
+    visibility:hidden;
+}
+
+#close {
+    font-family: maintext;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}
+
+#close button {
+    padding-top: 0px;
+}
+
+#popstar {
+    height: 21.5px;
+    position: absolute;
+    top: 8px;
+    left: 17px;
+}
+.over {
+    position: absolute;
+    overflow: scroll;
+    width: 100%;
+    height: 490px;
+    left: 0px;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.data {
+    font-family: maintext;
+    color: white;
+}
+
+#name {
+    position: absolute;
+    top: 9px;
+    left: 53px;
+    font-size: 25px;
+}
+
+#sunrise {
+    position: absolute;
+    top: 54px;
+    left: 16px;
+    font-size: 15px;
+}
+
+#sunset {
+    position: absolute;
+    top: 54px;
+    left: 207px;
+    font-size: 15px;
+}
+
+#forecast {
+    position: absolute;
+    top: 88px;
+    left: 16px;
+    font-size: 15px;
+}
+
+#humid {
+    position: absolute;
+    top: 88px;
+    left: 207px;
+    font-size: 15px;
+}
+
+#wind {
+    position: absolute;
+    top: 123px;
+    left: 16px;
+    font-size: 15px;
+}
+
+#cloud {
+    position: absolute;
+    top: 123px;
+    left: 207px;
+    font-size: 15px;
+}
+
+#maxtemp {
+    position: absolute;
+    top: 158px;
+    left: 16px;
+    font-size: 15px;
+}
+
+#mintemp {
+    position: absolute;
+    top: 158px;
+    left: 207px;
+    font-size: 15px;
+}

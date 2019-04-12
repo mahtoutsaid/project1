@@ -1,0 +1,1681 @@
+html, body {
+    background-color: grey;
+}
+
+@font-face {
+    font-family: maintext;
+    src: url(avenir.otf);
+}
+
+.site {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.container {
+    width: 1180px;
+    height: 680px;
+    display: inline-block; 
+    background-image: url("../images/map-bayarea.png");
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 50px black;
+    position: relative;
+}
+
+.textarea {
+    text-align: left;
+    font-family: maintext;
+    padding: 30px 0px 0px 30px;
+}
+
+.textarea h1 {
+    font-size: 50px;
+    color: darkslategray;
+}
+
+.textarea h2 {
+    font-size: 17px;
+    color: darkslategray;
+}
+
+.textarea h3 {
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 25px;
+    color: darkslategray;
+}
+
+/* Star next to Starred Places */
+#star {
+    height: 20px;
+    position: absolute;
+    top: 148px;
+}
+
+/* Text area under Starred Places */
+.starred {
+   background-color:rgba(0, 0, 0, 0.1);
+   width: 500px;
+   height: 400px; 
+   overflow: scroll;
+}
+
+/* Starred View Button */
+.view {
+    height: 50px;
+    width: 120px;
+    background-color: darkslategray;
+    border: 1px solid darkslategray;
+    color: ivory;
+    font-size: 12px;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+.view:hover {
+    box-shadow: 0px 0px 20px black;
+}
+
+/* San Francisco */
+#sf {
+    width: 225px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 400px;
+    bottom: 407px;
+}
+
+.bay:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+#sf img {
+    height: 15px;
+    width: auto;
+    margin-top: 7px;
+}
+
+.leftboxL {
+    height: 30px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.midboxL {
+    height: 30px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#temp {
+    margin-top: 8px;
+}
+
+#lg #temp {
+    margin-top: 4px;
+}
+
+.rightboxL {
+    height: 30px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexsj {
+    height: 30px;
+    width: 90px;
+    float: left;
+}
+
+.flexsf {
+    height: 30px;
+    width: 115px;
+    float: left;
+}
+.flexoak {
+    height: 30px;
+    width: 75px;
+    float: right;
+}
+
+.flexlg {
+    height: 20px;
+    width: 60px;
+    float: right;
+}
+
+#sj {
+    width: 190px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 270px;
+    bottom: 240px;
+}
+
+.bay:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+#sj img {
+    height: 15px;
+    width: auto;
+    margin-top: 7px;
+}
+
+#oak {
+    width: 175px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 195px;
+    bottom: 416px;
+}
+
+#oak img {
+    height: 15px;
+    width: auto;
+    margin-top: 7px;
+}
+
+#lg img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#lg {
+    width: 160px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 133px;
+    bottom: 211px;
+}
+
+#lg .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#lg .midboxR {
+    height: 20px;
+    width: 40px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#lg .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#mh {
+    width: 172px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 213px;
+    bottom: 180px;
+}
+
+#mh img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#mh #temp {
+    margin-top: 4px;
+}
+
+#mh .leftboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#mh .midboxL {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#mh .rightboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexmh {
+    height: 20px;
+    width: 70px;
+    float: right;
+}
+
+#sc {
+    width: 172px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 306px;
+    bottom: 133px;
+}
+
+#sc img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#sc #temp {
+    margin-top: 4px;
+}
+
+#sc .leftboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#sc .midboxL {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#sc .rightboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexsc {
+    height: 20px;
+    width: 70px;
+    float: right;
+}
+
+#gr {
+    width: 144px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 90px;
+    bottom: 143px;
+}
+
+#gr img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#gr #temp {
+    margin-top: 4px;
+}
+
+#gr .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#gr .midboxR {
+    height: 20px;
+    width: 40px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#gr .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexgr {
+    height: 20px;
+    width: 44px;
+    float: right;
+}
+
+#wv {
+    width: 175px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 161px;
+    bottom: 111px;
+}
+
+#wv img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#wv #temp {
+    margin-top: 4px;
+}
+
+#wv .leftboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#wv .midboxL {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#wv .rightboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexwv {
+    height: 20px;
+    width: 75px;
+    float: right;
+}
+
+#hl {
+    width: 150px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0px;
+    bottom: 93px;
+}
+
+#hl img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#hl #temp {
+    margin-top: 4px;
+}
+
+#hl .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#hl .midboxR {
+    height: 20px;
+    width: 40px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#hl .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexhl {
+    height: 20px;
+    width: 50px;
+    float: right;
+}
+
+#sl {
+    width: 160px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 110px;
+    bottom: 37px;
+}
+
+#sl img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#sl #temp {
+    margin-top: 4px;
+}
+
+#sl .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#sl .midboxR {
+    height: 20px;
+    width: 40px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#sl .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexsl {
+    height: 20px;
+    width: 60px;
+    float: right;
+}
+
+#mr {
+    width: 157px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 274px;
+    bottom: 27px;
+}
+
+#mr img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#mr #temp {
+    margin-top: 4px;
+}
+
+#mr .leftboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#mr .midboxL {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#mr .rightboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexmr {
+    height: 20px;
+    width: 57px;
+    float: right;
+}
+
+#dc {
+    width: 172px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 350px;
+    bottom: 362px;
+}
+
+#dc img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#dc #temp {
+    margin-top: 4px;
+}
+
+#dc .leftboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#dc .midboxL {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#dc .rightboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexdc {
+    height: 20px;
+    width: 72px;
+    float: right;
+}
+
+#pa {
+    width: 161px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 238px;
+    bottom: 300px;
+}
+
+#pa img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#pa #temp {
+    margin-top: 4px;
+}
+
+#pa .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#pa .midboxR {
+    height: 20px;
+    width: 40px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#pa .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexpa {
+    height: 20px;
+    width: 61px;
+    float: right;
+}
+
+#sv {
+    width: 178px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 132px;
+    bottom: 277px;
+}
+
+#sv img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#sv #temp {
+    margin-top: 4px;
+}
+
+#sv .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#sv .midboxR {
+    height: 20px;
+    width: 40px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#sv .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexsv {
+    height: 20px;
+    width: 78px;
+    float: right;
+}
+
+#sr {
+    width: 178px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 394px;
+    top: 35px;
+}
+
+#sr img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#sr #temp {
+    margin-top: 4px;
+}
+
+#sr .leftboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#sr .midboxL {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#sr .rightboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexsr {
+    height: 20px;
+    width: 78px;
+    float: right;
+}
+
+#rp {
+    width: 169px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 398px;
+    top: 84px;
+}
+
+#rp img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#rp #temp {
+    margin-top: 4px;
+}
+
+#rp .leftboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#rp .midboxL {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#rp .rightboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexrp {
+    height: 20px;
+    width: 69px;
+    float: right;
+}
+
+#pt {
+    width: 160px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 459px;
+    top: 119px;
+}
+
+#pt img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#pt #temp {
+    margin-top: 4px;
+}
+
+#pt .leftboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#pt .midboxL {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#pt .rightboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexpt {
+    height: 20px;
+    width: 60px;
+    float: right;
+}
+
+#nov {
+    width: 70px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 431px;
+    top: 144px;
+}
+
+#nov img {
+    height: 13px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#nov #temp {
+    margin-top: 4px;
+}
+
+#nov .leftboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#nov .midboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+    font-size: 13px;
+}
+
+#nov .rightboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexnov {
+    height: 20px;
+    width: 70px;
+    float: right;
+}
+
+#raf {
+    width: 70px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 431px;
+    top: 189px;
+}
+
+#raf img {
+    height: 13px;
+    width: auto;
+    margin-top: 20px;
+}
+
+#raf #temp {
+    margin-top: 20px;
+}
+
+#raf .leftboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#raf .midboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+    font-size: 13px;
+}
+
+#raf .rightboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexraf {
+    height: 20px;
+    width: 50px;
+    float: right;
+}
+
+#val {
+    width: 70px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 354px;
+    top: 144px;
+}
+
+#val img {
+    height: 13px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#val #temp {
+    margin-top: 4px;
+}
+
+#val .leftboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#val .midboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+    font-size: 13px;
+}
+
+#val .rightboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexval {
+    height: 20px;
+    width: 70px;
+    float: right;
+}
+
+#vac {
+    width: 70px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 293px;
+    top: 47px;
+}
+
+#vac img {
+    height: 13px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#vac #temp {
+    margin-top: 4px;
+}
+
+#vac .leftboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#vac .midboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+    font-size: 13px;
+}
+
+#vac .rightboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexvac {
+    height: 20px;
+    width: 70px;
+    float: right;
+}
+
+#nap {
+    width: 70px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 318px;
+    top: 84px;
+}
+
+#nap img {
+    height: 13px;
+    width: auto;
+    margin-top: 20px;
+}
+
+#nap #temp {
+    margin-top: 20px;
+}
+
+#nap .leftboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#nap .midboxL {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+    font-size: 13px;
+}
+
+#nap .rightboxL {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexnap {
+    height: 20px;
+    width: 50px;
+    float: right;
+}
+
+#ff {
+    width: 161px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 149px;
+    top: 96px;
+}
+
+#ff img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#ff #temp {
+    margin-top: 4px;
+}
+
+#ff .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ff .midboxR {
+    height: 20px;
+    width: 40px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#ff .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexff {
+    height: 20px;
+    width: 61px;
+    float: right;
+}
+
+#sac {
+    width: 174px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+
+#sac img {
+    height: 13px;
+    width: auto;
+    margin-top: 8px;
+}
+
+#sac #temp {
+    margin-top: 9px;
+}
+
+#sac .leftboxR {
+    height: 30px;
+    width: 20px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#sac .midboxR {
+    height: 30px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+    font-size: 13px;
+}
+
+#sac .rightboxR {
+    height: 30px;
+    width: 20px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexsac {
+    height: 30px;
+    width: 104px;
+    float: right;
+}
+
+#ben {
+    width: 120px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 218px;
+    top: 163px;
+}
+
+#ben img {
+    height: 13px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#ben #temp {
+    margin-top: 4px;
+}
+
+#ben .leftboxR {
+    height: 20px;
+    width: 20px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ben .midboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+    font-size: 13px;
+}
+
+#ben .rightboxR {
+    height: 20px;
+    width: 20px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexben {
+    height: 20px;
+    width: 50px;
+    float: right;
+}
+
+#oakl {
+    width: 110px;
+    height: 17px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 118px;
+    top: 184px;
+}
+
+#oakl img {
+    height: 13px;
+    width: auto;
+    margin-top: 2px;
+}
+
+#oakl #temp {
+    margin-top: 2px;
+}
+
+#oakl .leftboxR {
+    height: 20px;
+    width: 20px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#oakl .midboxR {
+    height: 20px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+    font-size: 13px;
+}
+
+#oakl .rightboxR {
+    height: 20px;
+    width: 20px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexoakl {
+    height: 20px;
+    width: 40px;
+    float: right;
+}
+
+#con {
+    width: 70px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 238px;
+    top: 186px;
+}
+
+#con img {
+    height: 13px;
+    width: auto;
+    margin-top: 20px;
+}
+
+#con #temp {
+    margin-top: 20px;
+}
+
+#con .leftboxR {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#con .midboxR {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+    font-size: 13px;
+}
+
+#con .rightboxR {
+    height: 20px;
+    width: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexcon {
+    height: 20px;
+    width: 50px;
+    float: right;
+}
+
+#lo {
+    width: 129px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 117px;
+    top: 136px;
+}
+
+#lo img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#lo #temp {
+    margin-top: 4px;
+}
+
+#lo .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#lo .midboxR {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#lo .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexlo {
+    height: 20px;
+    width: 29px;
+    float: left;
+}
+
+#eg {
+    width: 164px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 78px;
+    top: 42px;
+}
+
+#eg img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#eg #temp {
+    margin-top: 4px;
+}
+
+#eg .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#eg .midboxR {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#eg .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexeg {
+    height: 20px;
+    width: 64px;
+    float: left;
+}
+
+#dav {
+    width: 139px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 197px;
+    top: 2px;
+}
+
+#dav img {
+    height: 15px;
+    width: auto;
+    margin-top: 3px;
+}
+
+#dav #temp {
+    margin-top: 4px;
+}
+
+#dav .leftboxR {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#dav .midboxR {
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+#dav .rightboxR {
+    height: 20px;
+    width: 30px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.flexdav {
+    height: 20px;
+    width: 39px;
+    float: left;
+}
+
+.leftboxR {
+    height: 30px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.midboxR {
+    height: 30px;
+    width: 40px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    font-family: maintext;
+}
+
+.rightboxR {
+    height: 30px;
+    width: 30px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.popup #popup {
+    width: 500px;
+    position: absolute;
+    right: 340px;
+    bottom: 230px;
+    border-radius: 22px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0);
+}
+
+.popup.hidden {
+    visibility:hidden;
+}
+
+#close {
+    font-family: maintext;
+    position: absolute;
+    right: 370px;
+    bottom: 500px;
+}
+
+#close button {
+    padding-top: 0px;
+}
+
+#popstar {
+    height: 30px;
+    position: absolute;
+    top: 160px;
+    left: 365px;
+
+}
+
+.data {
+    font-family: maintext;
+    color: white;
+}
+
+#name {
+    position: absolute;
+    top: 165px;
+    left: 415px;
+    font-size: 30px;
+}
+
+#sunrise {
+    position: absolute;
+    top: 223px;
+    left: 362px;
+    font-size: 20px;
+}
+
+#sunset {
+    position: absolute;
+    top: 223px;
+    left: 633px;
+    font-size: 20px;
+}
+
+#forecast {
+    position: absolute;
+    top: 272px;
+    left: 362px;
+    font-size: 20px;
+}
+
+#humid {
+    position: absolute;
+    top: 272px;
+    left: 633px;
+    font-size: 20px;
+}
+
+#wind {
+    position: absolute;
+    top: 321px;
+    left: 362px;
+    font-size: 20px;
+}
+
+#cloud {
+    position: absolute;
+    top: 321px;
+    left: 633px;
+    font-size: 20px;
+}
+
+#maxtemp {
+    position: absolute;
+    top: 368px;
+    left: 362px;
+    font-size: 20px;
+}
+
+#mintemp {
+    position: absolute;
+    top: 368px;
+    left: 633px;
+    font-size: 20px;
+}
+
+.citylist {
+    color: grey;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.delete {
+    color: black;
+    font-size: 8px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.delete:hover {
+    color: red;
+}
